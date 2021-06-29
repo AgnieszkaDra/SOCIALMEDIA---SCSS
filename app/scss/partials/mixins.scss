@@ -1,11 +1,39 @@
+@import 'partials/variables.scss';
+
+
 @mixin flex() {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+@mixin flexblockquote {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
 @mixin absolutecenter() {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@mixin border() {
+    border: 2px solid $color-brand;
+}
+
+
+
+
+
+
+
+@mixin border-position {
+    position: absolute;
+    right: $border-right; 
+    left: $border-left; 
+    top: $border-top; 
+    bottom: $border-bottom;
 }

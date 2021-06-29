@@ -5,3 +5,27 @@
 .mainwrapper__section {
     position: relative;
 }
+
+.one__absolute {
+    padding: $padding;
+    font-size: $font-size;
+    line-height: $line-height;
+    border: 2px solid $color-contrast;
+    background-color: $color-section;
+    position: absolute;
+    @include absolutecenter();
+    @include flex();
+}
+
+.two__figcaption {
+    @include flexblockquote();
+    color: $color-section;
+    margin: 0;
+}
+
+.border {
+    @include border-position();
+    @include border();
+}
+
+

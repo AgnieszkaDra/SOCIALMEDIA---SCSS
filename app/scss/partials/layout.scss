@@ -27,16 +27,14 @@ main {
     grid-template-rows: 1fr 1fr;
 }
 
-.one__absolute {
-    padding: $padding;
-    font-size: $font-size;
-    line-height: $line-height;
-    border: 2px solid $color-contrast;
-    background-color: $color-section;
-    position: absolute;
-    @include absolutecenter();
-    @include flex();
+
+
+.mainwrapper__section.two {
+    grid-column: 3/5 ;
+    grid-row: 1/2;
 }
+
+
 
 
 
