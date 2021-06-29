@@ -75,4 +75,18 @@ img {
   bottom: calc(1vw + 5px);
   border: 2px solid lightgray; }
 
+.blockquote {
+  margin-right: calc(1vw + 5px);
+  margin-left: calc(1vw + 5px);
+  margin-bottom: calc(1vw + 5px);
+  font-size: calc(3vw + 2px)/2;
+  font-family: 'Viaoda Libre', cursive; }
+
+span {
+  margin-right: calc(1vw + 5px);
+  margin-left: calc(1vw + 5px);
+  margin-bottom: calc(1vw + 5px);
+  font-size: calc(3vw + 2px)/2;
+  font-family: 'Italianno', cursive; }
+
 /*# sourceMappingURL=index.css.map */

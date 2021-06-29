@@ -32,8 +32,8 @@
 
 @mixin border-position {
     position: absolute;
-    right: $border-right; 
-    left: $border-left; 
-    top: $border-top; 
-    bottom: $border-bottom;
+    right: $space; 
+    left: $space; 
+    top: $space; 
+    bottom: $space;
 }
