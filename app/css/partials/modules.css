@@ -1,21 +1,17 @@
 /*
-Error: Undefined variable: "$padding".
-        on line 31 of app/scss/partials/layout.scss
+Error: Undefined variable: "$color-section".
+        on line 2 of app/scss/partials/modules.scss
 
-26:     grid-template-columns: 1fr 1fr;
-27:     grid-template-rows: 1fr 1fr;
-28: }
-29: 
-30: .one__absolute {
-31:     padding: $padding;
-32:     font-size: $font-size;
-33:     line-height: $line-height;
-34:     border: 2px solid $color-contrast;
-35:     background-color: $color-section;
-36:     position: absolute;
+1: .mainwrapper__section {
+2:     background-color: $color-section;
+3: }
+4: 
+5: .mainwrapper__section {
+6:     position: relative;
+7: }
 
 Backtrace:
-app/scss/partials/layout.scss:31
+app/scss/partials/modules.scss:2
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -69,4 +65,4 @@ C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$padding\".\A         on line 31 of app/scss/partials/layout.scss\A \A 26:     grid-template-columns: 1fr 1fr;\A 27:     grid-template-rows: 1fr 1fr;\A 28: }\A 29: \A 30: .one__absolute {\A 31:     padding: $padding;\A 32:     font-size: $font-size;\A 33:     line-height: $line-height;\A 34:     border: 2px solid $color-contrast;\A 35:     background-color: $color-section;\A 36:     position: absolute;"; }
+  content: "Error: Undefined variable: \"$color-section\".\A         on line 2 of app/scss/partials/modules.scss\A \A 1: .mainwrapper__section {\A 2:     background-color: $color-section;\A 3: }\A 4: \A 5: .mainwrapper__section {\A 6:     position: relative;\A 7: }"; }

@@ -1,22 +1,42 @@
+@import 'partials/mixins.scss';
 
-
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 90% 10%;
-}
-
-
-main {
-    grid-row: 1/2;
-}
-
-aside {
-    grid-row: 2/3;
-}
 
 .container {
-    max-width: 1300px;
     margin: 0 auto;
-    height: 100vh;
+    
 }
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3, minmax(200px));
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gap {
+    margin: 1em 1em;
+    gap: 0.2em;
+}
+
+.mainwrapper__section.one {
+    grid-column: 1 / 3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.one__absolute {
+    padding: $padding;
+    font-size: $font-size;
+    line-height: $line-height;
+    border: 2px solid $color-contrast;
+    background-color: $color-section;
+    position: absolute;
+    @include absolutecenter();
+    @include flex();
+}
+
+
+
