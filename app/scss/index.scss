@@ -1,7 +1,4 @@
-body {
-    background-color: aqua;
-}
+@import 'partials/variables.scss';
+@import 'partials/layout.scss';
+@import 'partials/base.scss';
 
-p {
-    color: red;
-}

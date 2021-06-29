@@ -22,23 +22,6 @@ aside {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  height: 100%;
+  height: 100vh;
 }
-
-body {
-  background-color: lightgray;
-}
-
-:root {
-  font-size: 1rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=layout.css.map */

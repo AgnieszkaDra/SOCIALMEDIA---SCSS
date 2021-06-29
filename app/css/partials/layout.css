@@ -1,0 +1,17 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90% 10%; }
+
+main {
+  grid-row: 1/2; }
+
+aside {
+  grid-row: 2/3; }
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100vh; }
+
+/*# sourceMappingURL=layout.css.map */
