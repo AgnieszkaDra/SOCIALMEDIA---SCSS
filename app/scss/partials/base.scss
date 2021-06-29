@@ -17,3 +17,35 @@ img {
     height: 100%; 
 }
 
+.three__title {
+    grid-row: 1/2;
+    width: 80%;
+    background-color:darken($color-brand, 25%);
+    @include flex();
+    margin-top: $space;
+    margin-bottom: $space;
+    font-size: $font-size/2; //wrong
+    word-spacing: 2px;
+    text-decoration: underline;
+    color: $color-section;
+}
+
+.three__figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 0.2fr 0.6fr 1.2fr;
+}
+
+.three__figure picture {
+    position: relative;
+     grid-column: 2/4;
+     grid-row: 2/3;
+}
+
+.three__figure__background {
+    grid-row: 1/4;
+    grid-column: 3/4;
+    background-color: darken($color-brand, 25%);
+ }
+

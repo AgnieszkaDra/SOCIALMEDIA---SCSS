@@ -23,4 +23,11 @@ main {
   grid-column: 3/5;
   grid-row: 1/2; }
 
+.mainwrapper__section.three {
+  grid-column: 5/7;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  grid-template-columns: 100%; }
+
 /*# sourceMappingURL=layout.css.map */
