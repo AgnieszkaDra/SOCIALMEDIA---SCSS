@@ -30,4 +30,13 @@ main {
   grid-template-rows: 0.3fr 1fr;
   grid-template-columns: 100%; }
 
+.mainwrapper__section.four {
+  grid-column: 1/3;
+  grid-row: 2/3; }
+
+.mainwrapper__section.four picture {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70% 30%; }
+
 /*# sourceMappingURL=layout.css.map */

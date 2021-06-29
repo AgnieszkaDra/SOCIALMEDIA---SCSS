@@ -24,7 +24,7 @@ img {
     @include flex();
     margin-top: $space;
     margin-bottom: $space;
-    font-size: $font-size/2; //wrong
+    font-size: calc(#{$font-size} / 2); 
     word-spacing: 2px;
     text-decoration: underline;
     color: $color-section;
@@ -49,3 +49,46 @@ img {
     background-color: darken($color-brand, 25%);
  }
 
+ .mainwrapper__section.four > picture {
+    font-size: calc(#{$font-size} / 2);
+ }
+
+ .four__image {
+     grid-row: 1/2;
+     height: 70%;
+     width: 90%;
+     margin: $space;
+ }
+
+ .four__figcaption {
+     grid-row: 2/3;
+     @include flex();
+     flex-direction: column;
+     margin-top: $space;
+     margin-bottom: $space;
+     font-size: calc(#{$font-size} / 2);
+     font-family: 'Viaoda Libre', cursive;
+ }
+
+ .four__figcaption span {
+     align-self:   flex-end;
+     font-size: calc(#{$font-size} / 2);
+     
+ }
+
+ .four__title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background-color: darken($color-brand, 25%);
+    @include flex();
+    color: $color-section;
+    padding: calc(#{$font-size} / 2);
+    font-size: calc(#{$font-size} / 2);
+    line-height: calc(#{$font-size} / 2);
+ }
+       
+           
+    
+ 
