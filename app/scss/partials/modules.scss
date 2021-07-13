@@ -17,9 +17,8 @@
     @include flex();
 }
 
-.two__figcaption {
+.figcaption {
     @include flexblockquote();
-    color: $color-section;
     margin: 0;
 }
 
@@ -29,10 +28,11 @@
 }
 
 .blockquote {
+    color: $color-font;
     margin-right: $space;
     margin-left: $space;
     margin-bottom: $space;
-    font-size: $font-size/2;
+    font-size: $font-size / 2;
     font-family: 'Viaoda Libre', cursive;
 }
 

@@ -37,10 +37,16 @@ main {
 .mainwrapper__section.four picture {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 70% 30%; }
+  grid-template-rows: 70% 30%;
+  width: 100%;
+  height: 100%; }
+
+.mainwrapper__section.five {
+  grid-column: 3 / 5;
+  grid-row: 2 / 3; }
 
 body {
-  background-color: lightgray; }
+  background-color: darkgrey; }
 
 :root {
   font-size: 1rem;
@@ -55,10 +61,13 @@ img {
   width: 100%;
   height: 100%; }
 
+.two__figcaption {
+  color: aliceblue; }
+
 .three__title {
   grid-row: 1/2;
   width: 80%;
-  background-color: #939393;
+  background-color: dimgray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +76,7 @@ img {
   font-size: calc(calc(3vw + 2px) / 2);
   word-spacing: 2px;
   text-decoration: underline;
-  color: aliceblue; }
+  color: lightgrey; }
 
 .three__figure {
   margin: 0;
@@ -83,15 +92,15 @@ img {
 .three__figure__background {
   grid-row: 1/4;
   grid-column: 3/4;
-  background-color: #939393; }
+  background-color: dimgray; }
 
 .mainwrapper__section.four > picture {
   font-size: calc(calc(3vw + 2px) / 2); }
 
 .four__image {
-  grid-row: 1/2;
-  height: 70%;
-  width: 90%;
+  grid-row: 1 / 2;
+  height: 100%;
+  max-width: 90%;
   margin: calc(1vw + 5px); }
 
 .four__figcaption {
@@ -105,6 +114,39 @@ img {
   font-size: calc(calc(3vw + 2px) / 2);
   font-family: 'Viaoda Libre', cursive; }
 
+.four__figcaption {
+  color: aliceblue; }
+
+.four__figcaption__blockquote {
+  column-count: 1;
+  column-gap: 20px;
+  column-rule: 1px solid #baffc9;
+  text-align: justify; }
+
+@media (max-width: 992px) {
+  .mainwrapper__section.four picture {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+
+  .mainwrapper__section.four div {
+    display: none; }
+
+  .four__image {
+    max-width: 100%;
+    height: 100%;
+    margin: 0; } }
+@media (min-width: 992px) {
+  .four__figcaption.border {
+    border: 0; }
+
+  .four__figcaption blockquote {
+    color: black; }
+
+  .four__figcaption span {
+    color: black; } }
 .four__figcaption span {
   align-self: flex-end;
   font-size: calc(calc(3vw + 2px) / 2); }
@@ -114,17 +156,40 @@ img {
   top: 50%;
   left: 0;
   right: 0;
-  background-color: #939393;
+  background-color: dimgray;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: aliceblue;
+  color: lightgrey;
   padding: calc(calc(3vw + 2px) / 2);
   font-size: calc(calc(3vw + 2px) / 2);
   line-height: calc(calc(3vw + 2px) / 2); }
 
+.mainwrapper__section.five > img {
+  margin-top: calc(12vw + 5px);
+  margin-bottom: calc(6vw + 5px);
+  width: 100%;
+  max-height: calc(50% + 2vw); }
+
+@media (max-width: 800px) {
+  .mainwrapper__section.five > img {
+    max-height: calc(40% + 2vw); } }
+@media (max-width: 600px) {
+  .mainwrapper__section.five > img {
+    display: none; }
+
+  .five__figcaption__blockquote {
+    color: aliceblue; }
+
+  .mainwrapper__section.five {
+    background-image: url("IMG/love4.gif");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+  span {
+    color: aliceblue; } }
 .mainwrapper__section {
-  background-color: aliceblue; }
+  background-color: lightgrey; }
 
 .mainwrapper__section {
   position: relative; }
@@ -134,7 +199,7 @@ img {
   font-size: calc(3vw + 2px);
   line-height: calc(4vw + 2px);
   border: 2px solid black;
-  background-color: aliceblue;
+  background-color: lightgrey;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -143,12 +208,11 @@ img {
   justify-content: center;
   align-items: center; }
 
-.two__figcaption {
+.figcaption {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-  color: aliceblue;
   margin: 0; }
 
 .border {
@@ -157,9 +221,10 @@ img {
   left: calc(1vw + 5px);
   top: calc(1vw + 5px);
   bottom: calc(1vw + 5px);
-  border: 2px solid lightgray; }
+  border: 2px solid darkgrey; }
 
 .blockquote {
+  color: aliceblue;
   margin-right: calc(1vw + 5px);
   margin-left: calc(1vw + 5px);
   margin-bottom: calc(1vw + 5px);

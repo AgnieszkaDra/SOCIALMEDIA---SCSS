@@ -17,6 +17,10 @@ img {
     height: 100%; 
 }
 
+.two__figcaption {
+    color: $color-font;
+}
+
 .three__title {
     grid-row: 1/2;
     width: 80%;
@@ -51,16 +55,16 @@ img {
 
  .mainwrapper__section.four > picture {
     font-size: calc(#{$font-size} / 2);
- }
+}
 
  .four__image {
-     grid-row: 1/2;
-     height: 70%;
-     width: 90%;
+     grid-row: 1 / 2; 
+     height: 100%;
+     max-width: 90%;
      margin: $space;
- }
+}
 
- .four__figcaption {
+.four__figcaption {
      grid-row: 2/3;
      @include flex();
      flex-direction: column;
@@ -68,13 +72,68 @@ img {
      margin-bottom: $space;
      font-size: calc(#{$font-size} / 2);
      font-family: 'Viaoda Libre', cursive;
- }
+}
+
+.four__figcaption {
+    color: $color-font;
+}
+
+ .four__figcaption__blockquote {
+    column-count: 1;
+     column-gap: 20px;
+        column-rule: 1px solid #baffc9;
+    text-align: justify;
+   
+}
+
+@media(max-width: $lg){
+
+    .mainwrapper__section.four picture {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .mainwrapper__section.four div {
+        display: none;
+    }
+
+    .four__image {
+        max-width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .border {
+
+    }
+
+    
+   
+}
+
+@media(min-width: $lg){
+    .four__figcaption.border {
+      border: 0;
+    }
+    .four__figcaption blockquote {
+        color: $color-contrast;
+    }
+
+    .four__figcaption span {
+        color: $color-contrast;
+    }
+    
+}
+
+
 
  .four__figcaption span {
      align-self:   flex-end;
      font-size: calc(#{$font-size} / 2);
-     
- }
+}
 
  .four__title {
     position: absolute;
@@ -88,6 +147,36 @@ img {
     font-size: calc(#{$font-size} / 2);
     line-height: calc(#{$font-size} / 2);
  }
+
+ .mainwrapper__section.five > img {
+    margin-top: calc(12vw + 5px);
+    margin-bottom: calc(6vw + 5px);
+    width: 100%;
+    max-height: calc(50% + 2vw);
+}
+
+@media(max-width:800px) {
+    .mainwrapper__section.five > img {
+        max-height: calc(40% + 2vw);
+        }
+    }
+
+@media(max-width:600px){
+        .mainwrapper__section.five > img {
+            display: none;
+        }
+        .five__figcaption__blockquote {
+            color: $color-font;
+        }
+        .mainwrapper__section.five {
+            background-image: url('IMG/love4.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        span {
+            color: $color-font;
+        }
+    }
        
            
     
