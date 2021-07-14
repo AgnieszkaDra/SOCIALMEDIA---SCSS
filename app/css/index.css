@@ -66,7 +66,7 @@ img {
   height: 100%; }
 
 .two__figcaption {
-  color: pink; }
+  color: yellow; }
 
 .three__title {
   grid-row: 1/2;
@@ -119,7 +119,7 @@ img {
   font-family: 'Viaoda Libre', cursive; }
 
 .four__figcaption {
-  color: pink; }
+  color: yellow; }
 
 .four__figcaption__blockquote {
   column-count: 1;
@@ -180,7 +180,7 @@ img {
     display: none; }
 
   .five__figcaption__blockquote {
-    color: pink; }
+    color: yellow; }
 
   .mainwrapper__section.five {
     background-image: url("IMG/love4.gif");
@@ -188,7 +188,7 @@ img {
     background-size: cover; }
 
   span {
-    color: pink; } }
+    color: yellow; } }
 .five__figcaption {
   border: 2px solid;
   border-color: var(--dark-gray);
@@ -273,7 +273,7 @@ img {
   border: 2px solid darkgrey; }
 
 .blockquote {
-  color: pink;
+  color: yellow;
   margin-right: calc(1vw + 5px);
   margin-left: calc(1vw + 5px);
   margin-bottom: calc(1vw + 5px);
