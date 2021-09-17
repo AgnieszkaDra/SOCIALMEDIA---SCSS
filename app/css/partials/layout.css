@@ -55,4 +55,7 @@ main {
   display: flex;
   flex-direction: column; }
 
+.mainwrapper__section.six > figure {
+  margin: 0; }
+
 /*# sourceMappingURL=layout.css.map */
