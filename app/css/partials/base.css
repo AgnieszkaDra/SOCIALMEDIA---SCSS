@@ -1,68 +1,301 @@
-/*
-Error: Undefined variable: "$color-brand".
-        on line 2 of app/scss/partials/base.scss
+.mainwrapper__section {
+  background-color: aliceblue; }
 
-1: body {
-2:     background-color: $color-brand;
-3: }
-4: 
-5: :root{
-6:     font-size: 1rem;
-7:     box-sizing: border-box;
+.mainwrapper__section {
+  position: relative; }
 
-Backtrace:
-app/scss/partials/base.scss:2
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$color-brand\".\A         on line 2 of app/scss/partials/base.scss\A \A 1: body {\A 2:     background-color: $color-brand;\A 3: }\A 4: \A 5: :root{\A 6:     font-size: 1rem;\A 7:     box-sizing: border-box;"; }
+.one__absolute {
+  padding: calc(1vw + 5px);
+  font-size: calc(3vw + 2px);
+  line-height: calc(4vw + 2px);
+  border: 2px solid black;
+  background-color: aliceblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.figcaption {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 0; }
+
+.border {
+  position: absolute;
+  right: calc(1vw + 5px);
+  left: calc(1vw + 5px);
+  top: calc(1vw + 5px);
+  bottom: calc(1vw + 5px);
+  border: 2px solid darkgrey; }
+
+.blockquote {
+  color: yellow;
+  margin-right: calc(1vw + 5px);
+  margin-left: calc(1vw + 5px);
+  margin-bottom: calc(1vw + 5px);
+  font-size: calc(3vw + 2px)/2;
+  font-family: 'Viaoda Libre', cursive; }
+
+span {
+  margin-right: calc(1vw + 5px);
+  margin-left: calc(1vw + 5px);
+  margin-bottom: calc(1vw + 5px);
+  font-size: calc(calc(3vw + 2px) / 2);
+  font-family: 'Italianno', cursive; }
+
+body {
+  background-color: darkgrey; }
+
+:root {
+  font-size: 1rem;
+  box-sizing: border-box; }
+
+*,
+::before,
+::after {
+  box-sizing: inherit; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.two__figcaption {
+  color: yellow; }
+
+.three__title {
+  grid-row: 1/2;
+  width: 80%;
+  background-color: dimgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(1vw + 5px);
+  margin-bottom: calc(1vw + 5px);
+  font-size: calc(calc(3vw + 2px) / 2);
+  word-spacing: 2px;
+  text-decoration: underline;
+  color: aliceblue; }
+
+.three__figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-columns: 0.2fr 0.6fr 1.2fr; }
+
+.three__figure picture {
+  position: relative;
+  grid-column: 2/4;
+  grid-row: 2/3; }
+
+.three__figure__background {
+  grid-row: 1/4;
+  grid-column: 3/4;
+  background-color: dimgray; }
+
+.mainwrapper__section.four > picture {
+  font-size: calc(calc(3vw + 2px) / 2); }
+
+.four__image {
+  grid-row: 1 / 2;
+  height: 100%;
+  max-width: 90%;
+  margin: calc(1vw + 5px); }
+
+.four__figcaption {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: calc(1vw + 5px);
+  margin-bottom: calc(1vw + 5px);
+  font-size: calc(calc(3vw + 2px) / 2);
+  font-family: 'Viaoda Libre', cursive; }
+
+.four__figcaption {
+  color: yellow; }
+
+.four__figcaption__blockquote {
+  column-count: 1;
+  column-gap: 20px;
+  column-rule: 1px solid #baffc9;
+  text-align: justify; }
+
+@media (max-width: 992px) {
+  .mainwrapper__section.four picture {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+
+  .mainwrapper__section.four div {
+    display: none; }
+
+  .four__image {
+    max-width: 100%;
+    height: 100%;
+    margin: 0; } }
+@media (min-width: 992px) {
+  .four__figcaption.border {
+    border: 0; }
+
+  .four__figcaption blockquote {
+    color: black; }
+
+  .four__figcaption span {
+    color: black; } }
+.four__figcaption span {
+  align-self: flex-end;
+  font-size: calc(calc(3vw + 2px) / 2); }
+
+.four__title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background-color: dimgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  padding: calc(calc(3vw + 2px) / 2);
+  font-size: calc(calc(3vw + 2px) / 2);
+  line-height: calc(calc(3vw + 2px) / 2); }
+
+.mainwrapper__section.five > picture {
+  width: 100%; }
+
+@media (max-width: 768px) {
+  .mainwrapper__section.five > picture {
+    display: none; }
+
+  .five__figcaption__blockquote {
+    color: yellow; }
+
+  .mainwrapper__section.five {
+    background-image: url("IMG/love4.gif");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+  span {
+    color: yellow; } }
+.five__figcaption {
+  border: 2px solid darkgrey;
+  position: absolute;
+  right: calc(1vw + 5px);
+  bottom: calc(1vw + 5px);
+  left: calc(1vw + 5px);
+  top: calc(1vw + 5px); }
+
+.five__titlecontainer {
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.five__title {
+  width: 70%;
+  background-color: darkgrey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: calc(1vw + 5px); }
+
+.five__title2 {
+  font-size: calc(2vw + 2px);
+  padding: calc(1vw + 5px);
+  font-family: Arial, Helvetica, sans-serif; }
+
+.five__blockquotecontainer {
+  grid-row: 3 / 4; }
+
+.five__figcaption__blockquote {
+  font-family: 'Viaoda Libre', cursive;
+  font-size: calc(1vw + 1px);
+  text-align: center;
+  margin-top: calc(0.5vw + 5px);
+  margin-left: calc(1vw + 5px);
+  margin-right: calc(1vw + 5px); }
+
+.socialmedia__section5__absolute {
+  background-color: var(--dark-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(1.5vw + 2px);
+  line-height: calc(2vw + 2px);
+  padding: calc(0.5vw + 5px);
+  position: absolute;
+  top: calc(2vw + 5px);
+  left: calc(2vw + 5px);
+  right: calc(2vw + 5px);
+  width: auto; }
+
+.socialmedia__section5__figcaption__blockquote {
+  font-family: 'Viaoda Libre', cursive;
+  font-size: calc(1vw + 1px);
+  text-align: end;
+  margin-top: calc(0.5vw + 5px);
+  margin-left: calc(1vw + 5px);
+  margin-right: calc(1vw + 5px); }
+
+.mainwrapper__section.six figure:nth-child(1) img {
+  width: 70%;
+  height: 70%; }
+
+.mainwrapper__section.six figure:nth-child(2) img {
+  width: 70%;
+  height: 70%; }
+
+.mainwrapper__section.six > figure {
+  border-color: darkgrey;
+  position: relative; }
+
+.mainwrapper__section.six > figure:nth-child(1) {
+  border-top: none;
+  border-right: none;
+  display: flex;
+  justify-content: flex-end;
+  height: 45%;
+  margin-left: calc(2% + 2px); }
+
+.mainwrapper__section.six > figure:nth-child(2) {
+  border-left: none;
+  border-top: 0;
+  height: 50%;
+  margin-right: calc(2% + 2px);
+  margin-top: -2%;
+  border-left: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+
+.six__label.bottom {
+  background-color: var(--brand-white);
+  border: 2px solid;
+  border-color: var(--color-contrast);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(1.5vw + 2px);
+  padding: calc(0.25vw + 5px);
+  position: absolute;
+  left: 45%;
+  bottom: calc(-0.95vw - 13px); }
+
+.six__label.hidden {
+  background-color: var(--brand-white);
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  height: 10%;
+  width: calc(2% + 2px); }
+
+/*# sourceMappingURL=base.css.map */

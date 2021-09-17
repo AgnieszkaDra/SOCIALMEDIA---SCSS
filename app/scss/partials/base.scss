@@ -1,3 +1,7 @@
+@import 'partials/variables.scss';
+@import 'partials/mixins.scss';
+@import 'partials/modules.scss';
+
 body {
     background-color: $color-brand;
 }
@@ -179,13 +183,6 @@ img {
 
     .five__figcaption {
         @include border();
-        // border-color: var(--dark-gray);
-        // color: var(--color-contrast);
-        // display: flex;
-        // justify-content:flex-end;
-        // align-items:flex-end;
-        // flex-direction: column;
-       
         position: absolute;
         right: calc(1vw + 5px); 
         bottom: calc(1vw + 5px); 
@@ -199,7 +196,6 @@ img {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
     }
 
     .five__title {
@@ -220,6 +216,7 @@ img {
     .five__blockquotecontainer{
         grid-row: 3 / 4;
     }
+
     .five__figcaption__blockquote{
     font-family: 'Viaoda Libre', cursive;
     font-size: calc(1vw + 1px);
@@ -251,6 +248,67 @@ img {
         margin-top: calc(0.5vw + 5px);
         margin-left: calc(1vw + 5px);
         margin-right: calc(1vw + 5px); 
+    }
+
+    .mainwrapper__section.six figure:nth-child(1) img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .mainwrapper__section.six figure:nth-child(2) img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .mainwrapper__section.six > figure {
+        border-color: $color-brand;
+        position: relative;
+    }
+
+    .mainwrapper__section.six > figure:nth-child(1) {
+        border-top: none;
+        border-right: none;
+        display: flex;
+        justify-content: flex-end;
+        height: 45%;
+        margin-left: calc(2% + 2px);
+    }
+
+    .mainwrapper__section.six > figure:nth-child(2) {
+        border-left: none;
+        border-top: 0;
+        height: 50%;
+        margin-right: calc(2% + 2px);
+        margin-top: -2% ;
+        border-left: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .six__label.bottom {
+        
+            background-color: var(--brand-white);
+            border: 2px solid;
+            border-color: var(--color-contrast);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: calc(1.5vw + 2px);
+            padding: calc(0.25vw + 5px);
+            position: absolute;
+            left: 45%;
+            bottom: calc(-0.95vw - 13px);
+        
+    }
+
+    .six__label.hidden {
+        background-color: var(--brand-white);
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        height: 10%;
+        width: calc(2% + 2px);
     }
        
            
