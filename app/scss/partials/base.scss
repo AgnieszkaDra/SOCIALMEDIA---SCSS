@@ -22,7 +22,7 @@ img {
 }
 
 .two__figcaption {
-    color: $color-font;
+    color: $color-brand;
 }
 
 .three__title {
@@ -47,8 +47,8 @@ img {
 
 .three__figure picture {
     position: relative;
-     grid-column: 2/4;
-     grid-row: 2/3;
+    grid-column: 2/4;
+    grid-row: 2/3;
 }
 
 .three__figure__background {
@@ -163,21 +163,26 @@ img {
 //         max-height: calc(40% + 2vw);
 //         }
 //     }
+@media(max-width:$md ){
+    .mainwrapper__section.five > picture {
+        max-height: calc(40% + 2vw);
+        }
+    }
 
-@media(max-width: $md){
+@media(max-width: 600px){
         .mainwrapper__section.five > picture {
             display: none;
         }
         .five__figcaption__blockquote {
-            color: $color-font;
+            color: $color-brand;
         }
         .mainwrapper__section.five {
-            background-image: url('IMG/love4.gif');
+            background-image:url('/images/love4.gif');
             background-repeat: no-repeat;
             background-size: cover;
         }
         span {
-            color: $color-font;
+            color: $color-brand;
         }
     }
 
@@ -376,6 +381,27 @@ img {
         font-size: calc(1.5vw + 1px);
         font-family: 'Viaoda Libre', cursive;
         grid-row: 2 / 3;
+    }
+
+    .mainwrapper__section.aside section {
+        background-color: $color-section;
+        border: 3px solid;
+        border-color: $color-contrast;
+        grid-column: 2 / 3;
+    }
+
+    .mainwrapper__section.aside section h1 {
+        font-family: 'Andada', serif;
+        font-size: 2em;
+        letter-spacing: 0.8em;
+        text-align: center;
+    }
+    
+    .mainwrapper__section.aside section h3 {
+        font-family: 'Lora', serif;
+        font-size: 1.5em;
+        letter-spacing: 0.5em;
+        text-align: center;
     }
        
            

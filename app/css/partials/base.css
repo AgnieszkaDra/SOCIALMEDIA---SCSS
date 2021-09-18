@@ -34,7 +34,7 @@
   border: 2px solid darkgrey; }
 
 .blockquote {
-  color: yellow;
+  color: darkgrey;
   margin-right: calc(1vw + 5px);
   margin-left: calc(1vw + 5px);
   margin-bottom: calc(1vw + 5px);
@@ -65,7 +65,7 @@ img {
   height: 100%; }
 
 .two__figcaption {
-  color: yellow; }
+  color: darkgrey; }
 
 .three__title {
   grid-row: 1/2;
@@ -173,18 +173,21 @@ img {
 
 @media (max-width: 768px) {
   .mainwrapper__section.five > picture {
+    max-height: calc(40% + 2vw); } }
+@media (max-width: 600px) {
+  .mainwrapper__section.five > picture {
     display: none; }
 
   .five__figcaption__blockquote {
-    color: yellow; }
+    color: darkgrey; }
 
   .mainwrapper__section.five {
-    background-image: url("IMG/love4.gif");
+    background-image: url("/images/love4.gif");
     background-repeat: no-repeat;
     background-size: cover; }
 
   span {
-    color: yellow; } }
+    color: darkgrey; } }
 .five__figcaption {
   border: 2px solid darkgrey;
   position: absolute;
@@ -355,5 +358,23 @@ hr {
   font-size: calc(1.5vw + 1px);
   font-family: 'Viaoda Libre', cursive;
   grid-row: 2 / 3; }
+
+.mainwrapper__section.aside section {
+  background-color: aliceblue;
+  border: 3px solid;
+  border-color: black;
+  grid-column: 2 / 3; }
+
+.mainwrapper__section.aside section h1 {
+  font-family: 'Andada', serif;
+  font-size: 2em;
+  letter-spacing: 0.8em;
+  text-align: center; }
+
+.mainwrapper__section.aside section h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
+  letter-spacing: 0.5em;
+  text-align: center; }
 
 /*# sourceMappingURL=base.css.map */

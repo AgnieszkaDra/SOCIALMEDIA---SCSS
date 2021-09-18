@@ -90,6 +90,12 @@ main {
     gap: 0;
 }
 
+.mainwrapper__section.aside {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: minmax(200px);
+}
+
 
 
 
