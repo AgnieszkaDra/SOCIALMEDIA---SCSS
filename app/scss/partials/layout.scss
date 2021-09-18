@@ -73,6 +73,25 @@ main {
     margin: 0;
 }
 
+.mainwrapper__section.seven {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4 ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 70% 10%;
+}
+
+.mainwrapper__section.eight {
+    grid-column: 4 / 6;
+    grid-row: 3 / 4 ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+    gap: 0;
+}
+
+
+
 
 
 
