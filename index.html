@@ -1,115 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="app/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 </head>
+
 <body>
-    
-        <main class="mainwrapper">
-            <section class="mainwrapper__section one gap">
+
+    <main class="mainwrapper">
+        <section class="mainwrapper__section one gap">
+            <picture>
+                <img src="images/Love1.jpg" alt="photo of love">
+            </picture>
+            <picture>
+                <img src="images/Love2.jpg" alt="photo of love">
+            </picture>
+            <picture>
+                <img src="images/Love2.jpg" alt="photo of love">
+            </picture>
+            <picture>
+                <img src="images/love4.gif" alt="photo of love">
+            </picture>
+            <div class="one__absolute">
+                LOVE
+            </div>
+        </section>
+        <section class="mainwrapper__section two gap">
+            <img src="images/Love2.jpg">
+            <figcaption class="two__figcaption border figcaption">
+                <blockquote class="two__figcaption blockquote">I am happiest when I'm right next to you</blockquote>
+                <span>Author</span>
+            </figcaption>
+        </section>
+        <section class="mainwrapper__section three gap">
+            <div class="three__title">
+                OUR STORY
+            </div>
+            <figure class="three__figure">
+                <div class="three__figure__background"></div>
                 <picture>
-                    <img src="images/Love1.jpg" alt="photo of love">
-                </picture>
-                <picture>
-                    <img src="images/Love2.jpg" alt="photo of love">
-                </picture>
-                <picture>
-                    <img src="images/Love3.jpg" alt="photo of love">
-                </picture>
-                <picture>
-                    <img src="images/love4.gif" alt="photo of love">
-                </picture>
-                <div class="one__absolute">
-                    LOVE
-                </div>
-            </section>
-            <section class="mainwrapper__section two gap">
-                <img src="images/Love2.jpg">
-                <figcaption class="two__figcaption border figcaption">
-                    <blockquote class="two__figcaption blockquote">I am happiest when I'm right next to you</blockquote>
-                    <span>Author</span>
-                </figcaption>
-            </section>
-            <section class="mainwrapper__section three gap">
-                <div class="three__title">
-                        OUR STORY
-                </div>
-                <figure class="three__figure">
-                    <div class="three__figure__background"></div>
-                        <picture>
-                            <img src="images/Love3.jpg">
-                            <figcaption class="border"></figcaption>
-                        </picture>
-                </figure>
-            </section>
-            <section class="mainwrapper__section four gap">
-                <picture>
-                    <img src="images/love4.gif" class="four__image">
-                    <figcaption class="four__figcaption border figcaption">
-                        <blockquote class="four__figcaption__blockquote blockquote">“Don’t ever think I fell for you, or fell over you. I didn’t fall in love, I rose in it.”</blockquote>
-                        <span>Toni Morrison, Jazz</span>
-                    </figcaption>
-                </picture>
-                <div class="four__title">FOREVER</div>
-            </section>
-            <section class="mainwrapper__section five gap">
-                <div class="five__titlecontainer">
-                    <div class="five__title">YOU & ME</div>
-                    <div class="five__title2">forever</div>
-                </div>
-                <picture>
-                    <img src="images/love4.gif">
-                </picture>
-                <div class="five__blockquotecontainer">
-                    <blockquote class="five__figcaption__blockquote">I am happiest when I'm right next to you</blockquote>
-                    <span>Author</span>
-                </div>
-                <figcaption class="five__figcaption">
-                </figcaption>
-            </section>
-            <section class="mainwrapper__section six gap">
-                <figure >
-                    <img src="images/Love2.jpg">
-                    <div class="six__label bottom">LOVE</div>
-                    <div class="six__label hidden"></div>
-                </figure>
-                <figure >
-                    <img src="images/love4.gif">
-                    <div class="six__label bottom">FOREVER</div>
-                </figure>
-            </section>
-            <section class="mainwrapper__section seven gap">
-                <section class="seven__title">
-                    THE STORY 
-                    <hr>
-                </section>
-                <figure>
-                    <img src="images/Love2.jpg">
                     <img src="images/Love3.jpg">
-                    <div class="seven__figure__backgroundphoto"></div>
-                </figure>
-            </section>
-            <section class="mainwrapper__section eight gap">
+                    <figcaption class="border"></figcaption>
+                </picture>
+            </figure>
+        </section>
+        <section class="mainwrapper__section four gap">
+            <picture>
+                <img src="images/love4.gif" class="four__image">
+                <figcaption class="four__figcaption border figcaption">
+                    <blockquote class="four__figcaption__blockquote blockquote">“Don’t ever think I fell for you, or
+                        fell over you. I didn’t fall in love, I rose in it.”</blockquote>
+                    <span>Toni Morrison, Jazz</span>
+                </figcaption>
+            </picture>
+            <div class="four__title">FOREVER</div>
+        </section>
+        <section class="mainwrapper__section five gap">
+            <div class="five__titlecontainer">
+                <div class="five__title">YOU & ME</div>
+                <div class="five__title2">forever</div>
+            </div>
+            <picture>
+                <img src="images/love4.gif">
+            </picture>
+            <div class="five__blockquotecontainer">
+                <blockquote class="five__figcaption__blockquote">I am happiest when I'm right next to you</blockquote>
+                <span>Author</span>
+            </div>
+            <figcaption class="five__figcaption">
+            </figcaption>
+        </section>
+        <section class="mainwrapper__section six gap">
+            <figure>
                 <img src="images/Love2.jpg">
-                <section>
-                    <div>#Love</div>
-                    <div>#Together</div>
-                    <div>#Forever</div>
-                </section>
+                <div class="six__label bottom">LOVE</div>
+                <div class="six__label hidden"></div>
+            </figure>
+            <figure>
+                <img src="images/love4.gif">
+                <div class="six__label bottom">FOREVER</div>
+            </figure>
+        </section>
+        <section class="mainwrapper__section seven gap">
+            <section class="seven__title">
+                THE STORY
+                <hr>
             </section>
-        </main>
-        <aside class="mainwrapper__section aside">
+            <figure>
+                <img src="images/Love2.jpg">
+                <img src="images/Love3.jpg">
+                <div class="seven__figure__backgroundphoto"></div>
+            </figure>
+        </section>
+        <section class="mainwrapper__section eight gap">
+            <img src="images/Love2.jpg">
             <section>
-                <h1>SOCIAL MEDIA</h1>
-                <h3>Instagram template</h3>
+                <div>#Love</div>
+                <div>#Together</div>
+                <div>#Forever</div>
             </section>
-        </aside>
-    
-   
-    
+        </section>
+    </main>
+    <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/Love1.jpg"></div>
+            <div class="swiper-slide"><img src="images/Love2.jpg"></div>
+            <div class="swiper-slide"><img src="images/Love3.jpg"></div>
+            <div class="swiper-slide"><img src="images/love4.jpg"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+    </div>
+    <aside class="mainwrapper__section aside">
+        <section>
+            <h1>SOCIAL MEDIA</h1>
+            <h3>Instagram template</h3>
+        </section>
+    </aside>
+
+    <script src="./app/index.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+        let labels = ['&#9733', '&#9733', '&#9733'];
+        const swiper = new Swiper(".mySwiper", {
+
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+
+                    if (labels[index] == null) {
+                        className = 'null'
+                        return '<div class="' + className + '">' + '' +
+                            '</div>';
+                    } else {
+                        return '<div class="' + className + '">' + (labels[index]) +
+                            '</div>';
+                    }
+
+                },
+                bulletClass: 'my-custom-pagination-item',
+                bulletActiveClass: 'my-custom-pagination-active'
+            },
+        });
+    </script>
+
 </body>
+
 </html>

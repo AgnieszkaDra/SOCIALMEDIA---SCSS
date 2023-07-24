@@ -1,19 +1,25 @@
-@import 'partials/mixins.scss';
-
-
-.container {
-    margin: 0 auto;
-    
-}
 
 main {
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(3, minmax(200px));
+    grid-template-rows: 200px 200px 200px;
     width: 100%;
     margin: 0 auto;
 }
 
+@media(min-width:768px) {
+    main {
+      grid-template-rows: 400px 400px 400px;  
+    }
+    
+}
+
+@media(min-width:1000px) {
+    main {
+      grid-template-rows: 600px 600px 600px;  
+    }
+    
+}
 .gap {
     margin: 1em 1em;
     gap: 0.2em;
