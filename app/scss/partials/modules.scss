@@ -37,6 +37,9 @@
 }
 
 span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin-right: $space;
     margin-left: $space;
     margin-bottom: $space;
