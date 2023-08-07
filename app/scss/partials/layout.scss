@@ -104,7 +104,7 @@ main>section {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.2fr 0fr;
+    grid-template-rows: 1fr 4fr 0fr;
 }
 
 .mainwrapper__section.six {
@@ -115,7 +115,7 @@ main>section {
 
 
 
-.mainwrapper__section.four picture {
+.mainwrapper__section.four figure {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70% 30%;
