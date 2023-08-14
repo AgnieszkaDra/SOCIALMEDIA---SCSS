@@ -1,3 +1,8 @@
+.section {
+    background-color: $color-section;
+    position: relative;
+}
+
 .mainwrapper__section {
     background-color: $color-section;
 }
@@ -25,6 +30,13 @@
 .border {
     @include border-position();
     @include border();
+}
+
+.inside-border {
+    @include border-position();
+    @include border();
+    width: 90%;
+    max-height: 480px;
 }
 
 .blockquote {

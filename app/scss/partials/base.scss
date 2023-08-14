@@ -36,7 +36,7 @@ figure, blockquote {
     margin: 0;
 }
 
-.mainwrapper__section.one {
+.section.one {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -55,11 +55,11 @@ figure, blockquote {
         height: 500px;
     }
 }
-.two__figcaption {
+.figcaption.two {
     color: $color-brand;
 }
 
-.mainwrapper__section.three {
+.section.three {
 
     min-height: 500px;
     display: grid;
@@ -99,17 +99,23 @@ figure, blockquote {
     background-color: darken($color-brand, 25%);
 }
 
-// .mainwrapper__section.four>picture {
-//     font-size: calc(#{$font-size} / 2);
-// }
 
-.mainwrapper__section.four {
+
+.section.four {
     min-height: 500px;
     grid-column: 1/3;
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0fr;
+}
+
+.four figure {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% 30%;
+    width: 100%;
+    height: 100%;
 }
 
 .four__image {
@@ -141,7 +147,7 @@ figure, blockquote {
 
 @media(max-width: $lg) {
 
-    .mainwrapper__section.four figure{
+    .section.four figure{
         grid-row: 1/3;
         position: relative;
         display: block;
@@ -150,7 +156,7 @@ figure, blockquote {
         margin: 0;
     }
 
-    .mainwrapper__section.four div.four__title {
+    .section.four div.four__title {
         display: none;
     }
 
@@ -198,7 +204,7 @@ figure, blockquote {
     line-height: calc(#{$font-size} / 2);
 }
 
-.mainwrapper__section.five {
+.section.five {
 
     min-height: 500px;
     position: relative;
@@ -208,7 +214,7 @@ figure, blockquote {
 }
 
 
-.mainwrapper__section.five>picture {
+.section.five>picture {
     width: 100%;
     grid-row: 2/3;
     
@@ -221,7 +227,7 @@ figure, blockquote {
 // }
 
 @media(max-width: 600px) {
-    .mainwrapper__section.five>picture {
+    .section.five>picture {
         display: none;
     }
 
@@ -229,7 +235,7 @@ figure, blockquote {
         color: $color-brand;
     }
 
-    .mainwrapper__section.five {
+    .section.five {
         background-image: url('/images/love4.gif');
         background-repeat: no-repeat;
         background-size: cover;
@@ -313,7 +319,7 @@ figure, blockquote {
 }
 
 
-.mainwrapper__section.six {
+.section.six {
 
     display: flex;
     flex-wrap: wrap;
@@ -362,7 +368,7 @@ figure, blockquote {
 //     height: 70%;
 // }
 
-.mainwrapper__section.six>figure {
+.section.six>figure {
     border: 5px solid;
     border-color: $color-brand;
     position: relative;
@@ -396,7 +402,7 @@ figure, blockquote {
     width: calc(2% + 2px);
 }
 
-.mainwrapper__section.six>figure:nth-child(2) {
+.section.six>figure:nth-child(2) {
     border-left: none;
     display: flex;
     align-items: center;
@@ -420,7 +426,11 @@ hr {
     height: 5px;
 }
 
-.mainwrapper__section.seven figure {
+.section.seven {
+    min-height: 500px;
+}
+
+.section.seven figure {
     display: grid;
     grid-row: 2/3;
     grid-template-columns: 70% 30%;
@@ -431,21 +441,29 @@ hr {
     height: 100%;
 }
 
-.mainwrapper__section.seven figure img:nth-child(1) {
+.section.seven figure img:nth-child(1) {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
 
-.mainwrapper__section.seven figure img:nth-child(2) {
+.section.seven figure img:nth-child(2) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
-.mainwrapper__section.eight img {
+.section.eight {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+    gap: 0;
+}
+
+.section.eight img {
     grid-row: 1 / 2;
 }
 
-.mainwrapper__section.eight section {
+.section.eight section {
     background-color: $color-lightbrand;
     color: $color-contrast;
     display: flex;

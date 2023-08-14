@@ -2,6 +2,7 @@
   main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   main > section {
     max-height: 500px;
@@ -39,6 +40,11 @@
   display: grid;
   grid-template-columns: 0.5fr 3fr 0.5fr;
   grid-template-rows: minmax(200px);
+}
+
+.section {
+  background-color: aliceblue;
+  position: relative;
 }
 
 .mainwrapper__section {
@@ -79,6 +85,17 @@
   top: calc(1vw + 5px);
   bottom: calc(1vw + 5px);
   border: 2px solid darkgrey;
+}
+
+.inside-border {
+  position: absolute;
+  right: calc(1vw + 5px);
+  left: calc(1vw + 5px);
+  top: calc(1vw + 5px);
+  bottom: calc(1vw + 5px);
+  border: 2px solid darkgrey;
+  width: 90%;
+  max-height: 480px;
 }
 
 .blockquote {
@@ -132,13 +149,13 @@ figure, blockquote {
   margin: 0;
 }
 
-.mainwrapper__section.one {
+.section.one {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 0fr;
   height: 100%;
 }
-.mainwrapper__section.one > figure {
+.section.one > figure {
   max-height: 250px;
 }
 
@@ -149,11 +166,11 @@ figure, blockquote {
   height: 500px;
 }
 
-.two__figcaption {
+.figcaption.two {
   color: darkgrey;
 }
 
-.mainwrapper__section.three {
+.section.three {
   min-height: 500px;
   display: grid;
   grid-template-rows: 1fr 3fr;
@@ -195,13 +212,21 @@ figure, blockquote {
   background-color: dimgray;
 }
 
-.mainwrapper__section.four {
+.section.four {
   min-height: 500px;
   grid-column: 1/3;
   grid-row: 2/3;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0fr;
+}
+
+.four figure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70% 30%;
+  width: 100%;
+  height: 100%;
 }
 
 .four__image {
@@ -231,7 +256,7 @@ figure, blockquote {
 }
 
 @media (max-width: 992px) {
-  .mainwrapper__section.four figure {
+  .section.four figure {
     grid-row: 1/3;
     position: relative;
     display: block;
@@ -239,7 +264,7 @@ figure, blockquote {
     height: 100%;
     margin: 0;
   }
-  .mainwrapper__section.four div.four__title {
+  .section.four div.four__title {
     display: none;
   }
   .four__image {
@@ -276,7 +301,7 @@ figure, blockquote {
   line-height: calc(calc(3vw + 2px) / 2);
 }
 
-.mainwrapper__section.five {
+.section.five {
   min-height: 500px;
   position: relative;
   display: grid;
@@ -284,19 +309,19 @@ figure, blockquote {
   grid-template-rows: 1fr 4fr 0fr;
 }
 
-.mainwrapper__section.five > picture {
+.section.five > picture {
   width: 100%;
   grid-row: 2/3;
 }
 
 @media (max-width: 600px) {
-  .mainwrapper__section.five > picture {
+  .section.five > picture {
     display: none;
   }
   .five__figcaption__blockquote {
     color: darkgrey;
   }
-  .mainwrapper__section.five {
+  .section.five {
     background-image: url("/images/love4.gif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -376,13 +401,13 @@ figure, blockquote {
   margin-right: calc(1vw + 5px);
 }
 
-.mainwrapper__section.six {
+.section.six {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   min-height: 500px;
 }
-.mainwrapper__section.six > figure:nth-child(1) {
+.section.six > figure:nth-child(1) {
   height: 200px;
   flex-basis: 100%;
   margin-left: calc(2% + 2px);
@@ -391,11 +416,11 @@ figure, blockquote {
   display: flex;
   justify-content: flex-end;
 }
-.mainwrapper__section.six > figure:nth-child(1) img {
+.section.six > figure:nth-child(1) img {
   width: 70%;
   height: 70%;
 }
-.mainwrapper__section.six > figure:nth-child(2) {
+.section.six > figure:nth-child(2) {
   height: 250px;
   flex-basis: 100%;
   border-left: none;
@@ -405,13 +430,13 @@ figure, blockquote {
   margin-right: calc(2% + 2px);
   margin-bottom: 50px;
 }
-.mainwrapper__section.six > figure:nth-child(2) img {
+.section.six > figure:nth-child(2) img {
   width: 70%;
   height: 40%;
   margin-top: -30px;
 }
 
-.mainwrapper__section.six > figure {
+.section.six > figure {
   border: 5px solid;
   border-color: darkgrey;
   position: relative;
@@ -440,7 +465,7 @@ figure, blockquote {
   width: calc(2% + 2px);
 }
 
-.mainwrapper__section.six > figure:nth-child(2) {
+.section.six > figure:nth-child(2) {
   border-left: none;
   display: flex;
   align-items: center;
@@ -464,7 +489,11 @@ hr {
   height: 5px;
 }
 
-.mainwrapper__section.seven figure {
+.section.seven {
+  min-height: 500px;
+}
+
+.section.seven figure {
   display: grid;
   grid-row: 2/3;
   grid-template-columns: 70% 30%;
@@ -475,21 +504,28 @@ hr {
   height: 100%;
 }
 
-.mainwrapper__section.seven figure img:nth-child(1) {
+.section.seven figure img:nth-child(1) {
   grid-column: 1/2;
   grid-row: 1/3;
 }
 
-.mainwrapper__section.seven figure img:nth-child(2) {
+.section.seven figure img:nth-child(2) {
   grid-column: 2/3;
   grid-row: 1/2;
 }
 
-.mainwrapper__section.eight img {
+.section.eight {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80% 20%;
+  gap: 0;
+}
+
+.section.eight img {
   grid-row: 1/2;
 }
 
-.mainwrapper__section.eight section {
+.section.eight section {
   background-color: lightgrey;
   color: black;
   display: flex;
@@ -520,6 +556,11 @@ hr {
   font-size: 1.5em;
   letter-spacing: 0.5em;
   text-align: center;
+}
+
+.section {
+  background-color: aliceblue;
+  position: relative;
 }
 
 .mainwrapper__section {
@@ -560,6 +601,17 @@ hr {
   top: calc(1vw + 5px);
   bottom: calc(1vw + 5px);
   border: 2px solid darkgrey;
+}
+
+.inside-border {
+  position: absolute;
+  right: calc(1vw + 5px);
+  left: calc(1vw + 5px);
+  top: calc(1vw + 5px);
+  bottom: calc(1vw + 5px);
+  border: 2px solid darkgrey;
+  width: 90%;
+  max-height: 480px;
 }
 
 .blockquote {
