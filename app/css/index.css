@@ -384,6 +384,7 @@ figure, blockquote {
 }
 .mainwrapper__section.six > figure:nth-child(1) {
   height: 200px;
+  flex-basis: 100%;
   margin-left: calc(2% + 2px);
   border-top: none;
   border-right: none;
@@ -395,12 +396,14 @@ figure, blockquote {
   height: 70%;
 }
 .mainwrapper__section.six > figure:nth-child(2) {
-  max-height: 100px;
+  height: 250px;
+  flex-basis: 100%;
   border-left: none;
   border-top: 0;
   display: flex;
   justify-content: flex-end;
   margin-right: calc(2% + 2px);
+  margin-bottom: 50px;
 }
 .mainwrapper__section.six > figure:nth-child(2) img {
   width: 70%;
