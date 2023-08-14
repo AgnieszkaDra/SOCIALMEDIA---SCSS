@@ -103,6 +103,15 @@ figure, blockquote {
 //     font-size: calc(#{$font-size} / 2);
 // }
 
+.mainwrapper__section.four {
+    min-height: 500px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr;
+}
+
 .four__image {
     grid-row: 1 / 2;
     height: 100%;
@@ -188,6 +197,16 @@ figure, blockquote {
     font-size: calc(#{$font-size} / 2);
     line-height: calc(#{$font-size} / 2);
 }
+
+.mainwrapper__section.five {
+
+    min-height: 500px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 0fr;
+}
+
 
 .mainwrapper__section.five>picture {
     width: 100%;
@@ -293,15 +312,52 @@ figure, blockquote {
     margin-right: calc(1vw + 5px);
 }
 
-.mainwrapper__section.six figure:nth-child(1) img {
-    width: 70%;
-    height: 70%;
+
+.mainwrapper__section.six {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+ 
+    min-height: 500px;
+    
+     > figure:nth-child(1) {
+        height: 200px;
+        margin-left: calc(2% + 2px);
+        border-top: none;
+        border-right: none;
+        display: flex;
+        justify-content: flex-end;
+        img {
+            width: 70%;
+            height: 70%;
+        }
+     }
+
+     > figure:nth-child(2) {
+        max-height: 100px;
+        border-left: none;
+        border-top: 0;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: calc(2% + 2px);
+        img {
+            width: 70%;
+            height: 40%;
+            margin-top: -30px;
+        }
+     }
 }
 
-.mainwrapper__section.six figure:nth-child(2) img {
-    width: 70%;
-    height: 70%;
-}
+// .mainwrapper__section.six figure:nth-child(1) img {
+//     width: 70%;
+//     height: 70%;
+// }
+
+// .mainwrapper__section.six figure:nth-child(2) img {
+//     width: 70%;
+//     height: 70%;
+// }
 
 .mainwrapper__section.six>figure {
     border: 5px solid;
@@ -309,23 +365,8 @@ figure, blockquote {
     position: relative;
 }
 
-.mainwrapper__section.six>figure:nth-child(1) {
-    border-top: none;
-    border-right: none;
-    display: flex;
-    justify-content: flex-end;
-    height: 45%;
-    margin-left: calc(2% + 2px);
-}
 
-.mainwrapper__section.six figure:nth-child(2) {
-    border-left: none;
-    border-top: 0;
-    height: 50%;
-    margin-right: calc(2% + 2px);
-    margin-top: -2%;
 
-}
 
 .six__label.bottom {
 
