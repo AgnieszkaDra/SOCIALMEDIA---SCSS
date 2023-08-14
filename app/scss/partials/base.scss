@@ -3,7 +3,12 @@
 @import './modules.scss';
 
 body {
+    margin: 0;
     background-color: $color-brand;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 :root {
